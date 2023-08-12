@@ -1,0 +1,131 @@
+/* 
+PALETA DE COLORES:
+
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+
+ */
+
+ /* 
+TIPOGRAFÍAS:
+Familia: 'Roboto'
+ */
+
+/* TODO TODO TODO */
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    color: inherit;
+    text-align: center;
+}
+
+/* HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER    */
+.header{
+    background-color: #EAC926;
+}
+/* div1 */
+.header-container--logo--search-bar {
+    background-color:#EAC926;
+}
+.header-container-logo{
+
+}
+.header-container-barra-busqueda{
+
+}
+.header-barra-busqueda{
+    font-family:"Roboto";
+    font-size:12px;
+}
+.header-contenedor-busqueda-lupa{
+
+}
+
+/* div2 */
+.header-container-compra-en-cuotas{
+    background-color:#EAC926;
+    font-family:"Roboto";
+    font-size:16px;
+}
+/* nav1 */
+.header-container-navigation-bar{
+    background-color:#EAC926;
+}
+.header-elements-navigation-bar{
+    font-family:"Roboto";
+    font-size:16px;
+}
+.header-elements-register--login--myProducts{
+    font-family:"Roboto";
+    font-size:16px;
+}
+/* div3 */
+.header-menu-hamburguesa{
+    padding:5px;
+    border-radius:5px;
+    background-color:#1259c3;
+    text-align:center;
+    color:#fff;
+}
+.fas.fa-bars{
+    background-color: #1259c3;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+/* MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN    */
+.main-section-titular{
+    font-family:"Roboto";
+    font-size:24px;
+}
+
+.producto-precio{
+    font-family:"Roboto";
+    font-size:18px;
+}
+.producto-descuento{
+    font-family:"Roboto";
+    font-size:16px;
+}
+.producto-descripcion{
+    font-family:"Roboto";
+    font-size:16px;
+}
+
+
+
+
+ /* FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER    */
+ .footer-beneficios-p {
+    font-family:"Roboto";
+    font-size: 12px;
+ }
+
+ .footer-beneficios-h4 {
+    font-family:"Roboto";
+    font-size:16px;
+ }
+
+ .footer-beneficios-copyright{
+    font-family:"Roboto";
+    font-size: 12px;
+ }
+  
+.fa-solid .fa-user-shield{
+    color:#1259c3;
+    background-color:#1259c3;
+}
