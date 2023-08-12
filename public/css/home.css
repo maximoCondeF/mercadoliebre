@@ -110,6 +110,9 @@ Familia: 'Roboto'
 
 
  /* FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER    */
+ .footer-beneficios{
+    margin-bottom:10px;
+ }
  .footer-beneficios-p {
     font-family:"Roboto";
     font-size: 12px;
