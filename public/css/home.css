@@ -17,8 +17,8 @@ Familia: 'Roboto'
 
 /* TODO TODO TODO */
 
-*{
-    font-family: 'Roboto', sans-serif;
+* {
+    font-family: 'Roboto';
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -85,12 +85,52 @@ Familia: 'Roboto'
 
 
 
-
-
 /* MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN    */
+
+main {
+    width:90vw;
+    justify-self: center;
+    text-align:center;
+}
+
+.main-container-recomendaciones-ultima-visita, .main-container-ofertas{
+    
+    background-color:#ebebeb;
+    width:90vw;
+}
+
 .main-section-titular{
     font-family:"Roboto";
     font-size:24px;
+}
+
+
+
+.producto-container{
+
+
+    margin:10px;
+}
+
+.producto-container-imagen{
+    padding:15px;
+}
+
+.producto-container-imagen img{
+}
+
+.producto-container-info{
+    display:flex;
+    background-color:#fff;
+    border-top:1px solid #ebebeb;
+    padding:15px;
+}
+.producto-container-info i{
+    display:block;
+    border:1px solid #39b54a; 
+    border-radius:50%;
+    padding:6px 5px;
+    color:#39b54a;
 }
 
 .producto-precio{
@@ -100,10 +140,12 @@ Familia: 'Roboto'
 .producto-descuento{
     font-family:"Roboto";
     font-size:16px;
+    color:#39b54a
 }
 .producto-descripcion{
     font-family:"Roboto";
     font-size:16px;
+    display:none;
 }
 
 
@@ -128,7 +170,24 @@ Familia: 'Roboto'
     font-size: 12px;
  }
   
-.fa-solid .fa-user-shield{
+.footer-beneficios i{
+    display: block;
+    font-size: 16px;
+    padding: 7px 5px;
+    background-color: #FFF;
     color:#1259c3;
-    background-color:#1259c3;
 }
+
+
+
+
+@media (min-width:461px){
+    .producto-descripcion{
+        font-family:"Roboto";
+        font-size:16px;
+        display:inline;
+    }
+}
+
+@media (min-width: 769px)
+
