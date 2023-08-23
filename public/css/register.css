@@ -45,6 +45,7 @@ button:hover{
     transform: scale(1.05);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    filter:brightness(1.2);
 }
 
 
@@ -59,7 +60,6 @@ header{
     display:flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    align-items: center;
     background-color: rgb(255, 240, 72);
     padding:5px;
 }
@@ -80,12 +80,12 @@ header{
 }
 
 .header-container-barra-busqueda{
-    margin-top:.5rem;
-    width:fit-content;
-    background-color: rgb(255, 240, 72);
-    display:flex;
-    align-items:center;
-   }
+ margin-top:.5rem;
+ width:fit-content;
+ background-color: rgb(255, 240, 72);
+ display:flex;
+ align-items:center;
+}
 
 .header-container-barra-busqueda form{
     display:flex;
@@ -112,10 +112,6 @@ header{
     background-color: transparent;
     color:#666;
     cursor:pointer;
-}
-
-.header-contenedor-busqueda-lupa :hover{
-
 }
 
 /* div2 */
@@ -176,123 +172,180 @@ header{
 
 /* MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN    */
 
-
-.main-section-banner{
-    margin: -4px 0px;
+main{
+    margin-top:140px;
 }
 
-
-main {
-    width:100vw;
-    justify-self: center;
-    text-align:center;
-    background-color: #ebebeb;
-    margin-top:78px;
-    }
-
-.main-container-recomendaciones-ultima-visita, .main-container-ofertas{
-    
-    background-color:#ebebeb;
-    width:100vw;
-    display: flex;
-    flex-wrap: wrap;
+.main-container-all{
+    display:flex;
     justify-content: space-around;
-    align-items: center;
-    padding-bottom:3rem;
+    width:100vw;
+    padding: 5rem 5%;
+    background-color: #ebebeb;
+    margin-top:2px;
 }
 
-.main-section-titular{
-    font-family:"Roboto";
-    font-size:24px;
-    color:#666;
-    text-align:left;
-    padding: 20px 35px 10px;
-    width:100%;
-}
-
-.producto-container{
-    max-width: 80%;
-    margin:10px;
-    transition:all 0.3s ease;
-}
-
-.producto-container:hover{
-    transform: scale(1.05);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-}
-
-.producto-container-imagen{
+.main-container-register{
     padding:10px;
-    background-color: #fff;
+    width:90%;
+    background-color:#fff;
+    border-radius:10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,.4);
 }
 
-.producto-container-info{
+.main-register-title{
+    font-family: "Roboto";
+    font-style: none;
+    font-size:18px;
+    font-weight: 60;
+}
+
+.main-form-usuario-creacion{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.form-usuario-datos-personales{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: inherit;
+}
+
+.form-usuario-datos-personales>div{
+    width:100%;
+    padding:3px;
+}
+.form-usuario-datos-personales label{
+    font-weight:300;
+    font-size:16px;
+    justify-content: inherit;
+}
+.form-usuario-datos-personales input{
+    width:80%;
+    font-weight:100;
+    font-size:14px;
+    border:1px solid #666;
+    border-radius:5px;
+    justify-content: left;
+}
+
+::placeholder {
+    color: rgba(176, 169, 169, 0.96);
+    opacity: 1; 
+  }
+
+.form-usuario-perfil-e-intereses>div{
+    margin:4px 0px;
+    padding:5px 20px;
+    width:100%;
+    background-color:#f9f9f9;
+}
+.form-usuario-perfil-e-intereses p{
+    font-weight:300;
+    font-size:16px;
+    justify-content: inherit;
+    margin: 3px 0px;
+}
+
+.form-usuario-perfil-e-intereses div{
     display:flex;
     flex-wrap: wrap;
-    background-color:#fff;
-    border-top:1px solid #ebebeb;
-    padding:10px;
-    position: relative;
+    justify-content: space-around;
+    margin:3px 0px;
 }
-.producto-container-info i{
-     display: block;
-     font-size: 16px;
-     padding: 5px;
-     width: 30px;
-     height: 30px;
-     border: 1px solid #39b54a;
-     color:#39b54a;
-     background-color: #FFF;
-     border-radius: 50%;
-     position: absolute;
-     right: 20px;
-     top: -15px;
-     transition: all 500ms
+.form-usuario-perfil-e-intereses label{
+    width:80%;
+    font-weight:150;
+    font-size:12px;
 }
-.producto-container:hover .producto-container-info i{
-    animation: giroYVuelta .75s 1;
-  }
-  @keyframes giroYVuelta {
-    0% {
-      transform: rotate(0);
-    }
-    50% {
-      transform: rotate(-90deg);
-    }
-    100% {
-      transform: rotate(0);
-    }
-  }
+.form-usuario-perfil-e-intereses input{
+    width:80%;
+    font-weight:200;
+    font-size:14px;
+    border:1px solid #ebebebab;
+    border-radius:5px;
+    justify-content: left;
+    margin:0px 3px -2px
+}
 
-.producto-precio{
-    font-family:"Roboto";
-    font-size:18px;
-    width: 30%;
-    text-align: left;
-}
-.producto-descuento{
-    font-family:"Roboto";
-    font-size:16px;
-    color:#39b54a;
-    width:60%;
-    text-align: left;
-}
-.producto-descripcion{
-    font-family:"Roboto";
-    font-size:16px;
-    font-weight: 250;
-    color:#666;
-    opacity:0;
+.form-usuario-foto-perfil{
+    display:flex;
+    flex-wrap:wrap;
     width:100%;
-    opacity: 0; 
-    transition: opacity 0.8s ease;
+    padding:5px;
+    justify-content: center;
 }
 
-.producto-container:hover .producto-container-info .producto-descripcion{
-  opacity:1;
+.form-usuario-foto-perfil>label{
+    padding:4px 0px 2px;
+    width:100%;
 }
 
+.form-usuario-foto-perfil>input{
+    border:1px solid #ebebebab;
+    border-radius: 7px;
+    font-size: 14px;
+    background-color:rgb(255, 240, 72);
+    color:#000000;
+}
+
+profile-pic-submit {
+    width:100%;
+}
+
+.form-usuario-password, .form-usuario-password-confirm{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    margin:3px 0px;
+    width:100%;
+    margin: 5px 0px;
+}
+
+.form-usuario-password label, .form-usuario-password-confirm label{
+    width:80%;
+    font-weight:150;
+    font-size:12px;
+}
+
+.form-usuario-password input, .form-usuario-password-confirm input{
+    width:80%;
+    font-weight:200;
+    font-size:14px;
+    border:1px solid #ebebebab;
+    border-radius:5px;
+    justify-content: left;
+    margin:0px 3px -2px
+}
+
+.form-usuario-buttons{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.form-usuario-button-submit{
+    background-color: rgb(48, 36, 114);
+    transition: all 0.5s ease;
+    font-weight: 500;
+    color:rgb(255, 255, 255);
+    border:none;
+    border-radius:5px;
+    padding:10px 30px;
+    margin-top:10px;
+    margin-right:3%;
+}
+
+.form-usuario-button-reset{
+    background-color: #f88f1f;
+    transition: all 0.5s ease;
+    font-weight: 500;
+    border-radius:5px;
+    padding:10px 30px;
+    margin-top:10px;
+    margin-left:3%;
+}
 
  /* FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER    */
  .footer-beneficios{
@@ -326,7 +379,6 @@ main {
 
 
 @media (min-width: 768px){
-
     header{
         position:static;
     }
@@ -347,12 +399,9 @@ main {
         display:inline;
     }
 
-    
-
     .header-container-barra-busqueda form {
         display:flex;
         justify-content: space-around;
-        overflow: clip;
     }
 
     .header-container-nav-button{
@@ -374,20 +423,9 @@ main {
     }
 
     /* MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN    */
-
     main {
         margin-top:0
         }
-
-    .main-container-recomendaciones-ultima-visita, .main-container-ofertas{
-        display:flex;
-        flex-wrap: wrap;
-    }
-
-    .producto-container{
-        width:40%
-    }
-
 }
 
 
@@ -397,22 +435,10 @@ main {
     .header-barra-busqueda{
         width:25vw;
     }
-
-    .producto-container{
-        width:20%
-    }
-    .producto-precio{
-        width:60%;
-        overflow:visible;
-        text-align: center;
-    } 
-    .producto-descuento{
+    .main-container-register{
         width:40%;
     }
-    .producto-descripcion{
-        width:100%;
-        text-align: center;
-    }
+    
 
     footer{
         display:flex;

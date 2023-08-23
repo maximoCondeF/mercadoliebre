@@ -36,17 +36,11 @@ img {
     overflow: clip;
 }
 
-input:hover{
-    transform: scale(1.05);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
 button:hover{
     transform: scale(1.05);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-
 
 /* HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER   HEADER    */
 header{
@@ -59,7 +53,6 @@ header{
     display:flex;
     flex-wrap: wrap;
     justify-content:space-around;
-    align-items: center;
     background-color: rgb(255, 240, 72);
     padding:5px;
 }
@@ -80,12 +73,12 @@ header{
 }
 
 .header-container-barra-busqueda{
-    margin-top:.5rem;
-    width:fit-content;
-    background-color: rgb(255, 240, 72);
-    display:flex;
-    align-items:center;
-   }
+ margin-top:.5rem;
+ width:50vw;
+ background-color: rgb(255, 240, 72);
+ display:inline-flex;
+ align-items:center;
+}
 
 .header-container-barra-busqueda form{
     display:flex;
@@ -112,10 +105,6 @@ header{
     background-color: transparent;
     color:#666;
     cursor:pointer;
-}
-
-.header-contenedor-busqueda-lupa :hover{
-
 }
 
 /* div2 */
@@ -176,20 +165,35 @@ header{
 
 /* MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN    */
 
-
-.main-section-banner{
-    margin: -4px 0px;
+main{
+    margin-top:140px;
 }
 
+/* .main-section-banner{
+    margin: -4px 0px;
+} 
+ */
+
+ 
+ 
+ /*
+  .main-formulario-creacion-producto{
+    color:#111;
+    background-color: #fff;
+}
+.main-formulario-creacion-producto div input{
+    color:#111;
+    border:#666;
+    background-color: #fff;
+}
 
 main {
     width:100vw;
     justify-self: center;
     text-align:center;
     background-color: #ebebeb;
-    margin-top:78px;
     }
-
+   
 .main-container-recomendaciones-ultima-visita, .main-container-ofertas{
     
     background-color:#ebebeb;
@@ -213,13 +217,7 @@ main {
 .producto-container{
     max-width: 80%;
     margin:10px;
-    transition:all 0.3s ease;
-}
 
-.producto-container:hover{
-    transform: scale(1.05);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
 }
 
 .producto-container-imagen{
@@ -227,9 +225,11 @@ main {
     background-color: #fff;
 }
 
+.producto-container-imagen img{
+}
+
 .producto-container-info{
     display:flex;
-    flex-wrap: wrap;
     background-color:#fff;
     border-top:1px solid #ebebeb;
     padding:10px;
@@ -248,22 +248,11 @@ main {
      position: absolute;
      right: 20px;
      top: -15px;
-     transition: all 500ms
 }
-.producto-container:hover .producto-container-info i{
-    animation: giroYVuelta .75s 1;
-  }
-  @keyframes giroYVuelta {
-    0% {
-      transform: rotate(0);
-    }
-    50% {
-      transform: rotate(-90deg);
-    }
-    100% {
-      transform: rotate(0);
-    }
-  }
+
+.producto-container-info i:hover{
+    
+}
 
 .producto-precio{
     font-family:"Roboto";
@@ -275,23 +264,15 @@ main {
     font-family:"Roboto";
     font-size:16px;
     color:#39b54a;
-    width:60%;
+    width:70%;
     text-align: left;
 }
 .producto-descripcion{
     font-family:"Roboto";
     font-size:16px;
-    font-weight: 250;
-    color:#666;
-    opacity:0;
-    width:100%;
-    opacity: 0; 
-    transition: opacity 0.8s ease;
+    display:none;
 }
-
-.producto-container:hover .producto-container-info .producto-descripcion{
-  opacity:1;
-}
+ */
 
 
  /* FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER   FOOTER    */
@@ -326,7 +307,6 @@ main {
 
 
 @media (min-width: 768px){
-
     header{
         position:static;
     }
@@ -347,12 +327,9 @@ main {
         display:inline;
     }
 
-    
-
     .header-container-barra-busqueda form {
         display:flex;
         justify-content: space-around;
-        overflow: clip;
     }
 
     .header-container-nav-button{
@@ -374,7 +351,6 @@ main {
     }
 
     /* MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN   MAIN    */
-
     main {
         margin-top:0
         }
@@ -393,25 +369,12 @@ main {
 
 
 @media (min-width: 1024px){
-
-    .header-barra-busqueda{
-        width:25vw;
-    }
-
     .producto-container{
         width:20%
     }
-    .producto-precio{
-        width:60%;
-        overflow:visible;
-        text-align: center;
-    } 
-    .producto-descuento{
-        width:40%;
-    }
-    .producto-descripcion{
-        width:100%;
-        text-align: center;
+
+    .header-barra-busqueda{
+        width:25vw;
     }
 
     footer{
